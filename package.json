@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-tw-law",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "tw-law — Taiwan national statutes and the Constitution, in Chinese plus the Ministry of Justice's own official English translations where one exists, from the Ministry of Justice Laws & Regulations Database (全國法規資料庫). Fleet #3129.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-tw-law": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tw-law"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-tw-law.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/tw-law",
   "pipeworx": {
-    "sourceHash": "v1-93f7e951839b7103df727620fff2c2dd9349d7ec823117325ece1c28e2bfcafd",
-    "sourceCommit": "fe38188882d0fe91e5a45d82b7b989b4aae1e8b6"
+    "mode": "gateway",
+    "slug": "tw-law",
+    "gatewaySlug": "tw-law",
+    "sourceHash": "v1-bb03e0a55c3a85636f48efead2fcf80019e28a76db649bda8c5fcc57d05a486d",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
