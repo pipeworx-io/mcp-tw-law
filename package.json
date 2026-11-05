@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-tw-law",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "tw-law — Taiwan national statutes and the Constitution, in Chinese plus the Ministry of Justice's own official English translations where one exists, from the Ministry of Justice Laws & Regulations Database (全國法規資料庫). Fleet #3129.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "tw-law",
     "gatewaySlug": "tw-law",
-    "sourceHash": "v1-bb03e0a55c3a85636f48efead2fcf80019e28a76db649bda8c5fcc57d05a486d",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-6a2a1a59b0ad0ca1ae9b6997d398bde3d95ac04bb42c37fa46532e0ef2cd4b54",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
